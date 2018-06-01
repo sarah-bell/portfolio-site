@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Jua|Roboto');
+
+/* Global Styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'Jua', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Landing */
+
+#landing {
+  background: #fff;  
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#landing-text h2 {
+  color: #888;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 300ms ease-in;
+}
+
+.button:hover,
+.button:focus {
+  background: #f4f4f4;
+}
+
+#landing-image {
+  background: url('https://source.unsplash.com/5Ntkpxqt54Y');
+  background-position: 20% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+@media(min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text,
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+@media(min-width: 700px) {
+  .button {
+    padding: 1rem 3rem;
+  }
+}
+
+/* Summary */
+
+#summary {
+  margin-top: 1.5rem;
+}
+
+#summary p {
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+#summary img {
+  height: 16rem;
+  width: auto;
+  border: 2px solid #888;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* Skill boxes */
+
+#skill-boxes {
+  padding: 1rem 2rem;
+}
+
+.skill {
+  text-align: center;
+  border: 2px solid #888;
+  margin: 1rem;
+  padding: 1.2rem;
+}
+
+.skill .fas,
+.skill .fab {
+  font-size: 1.7rem;
+  padding-bottom: 1.1rem;
+}
+
+#skill-html {
+  border-top: 3px solid orangered;
+}
+
+#skill-html .fas {
+  color: orangered;
+}
+
+#skill-css {
+  border-top: 3px solid yellowgreen;
+}
+
+#skill-css .fab {
+  color: yellowgreen;
+}
+
+#skill-js {
+  border-top: 3px solid blueviolet;
+}
+
+#skill-js .fab {
+  color: blueviolet;
+}
+
+@media (min-width: 500px) {
+  #skill-boxes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #skill-html,
+  #skill-css,
+  #skill-js {
+    width: 32%;
+  }
+}
+
+/* Education */
+
+#education {
+  padding: 0 1.2rem;
+}
+
+@media (min-width: 500px) {
+  #degree-all {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Employment */
+
+#employment {
+  padding: 1.5rem 1.2rem;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  transition: color 300ms ease-in;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #888;
+  text-decoration: none;
+}
